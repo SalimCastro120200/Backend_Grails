@@ -18,4 +18,7 @@ class Areas {
         addresses lazy: false
     }
 
+    // def p = new Person(nombre: "RRHH", status: true)
+    // p.save()
+
 }
