@@ -1,13 +1,21 @@
 package server
 
-class Areas GormEntity<Areas> {
+class Areas {
 
-    Integer id_area
     String nombre
     Boolean status
+    Date dateCreated
+    Date lastUpdated
 
-    // static constraints = {
-    //     id_area(unique:true)
-    //     nombre(blank:false)
-    // }
+    static constraints = {
+        nombre(blank:false, nullable:false)
+    }
+
+    static belongsTo = Empleados
+    static hasMany = [empleados:Empleados]
+
+    static mapping = {
+        addresses lazy: false
+    }
+
 }
