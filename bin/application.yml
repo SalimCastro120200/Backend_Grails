@@ -81,11 +81,11 @@ environments:
             pooled: true
             dbCreate: create-drop
             logSql: true
-            url: jdbc:mysql://localhost:3306/ordenaris
+            url: jdbc:mysql://localhost:3307/ordenaris?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
             driverClassName: com.mysql.jdbc.Driver
             dialect: org.hibernate.dialect.MySQL5InnoDBDialect
             username: root
-            password: ''
+            password: '1234'
             properties:
                 jmxEnabled: true
                 initialSize: 5

@@ -8,4 +8,5 @@ class AreasService {
     def serviceMethod() {
 
     }
+    
 }
